@@ -1,0 +1,72 @@
+//- index.pug
+doctype html
+html
+  head
+    title Adnan's Dance Academy
+    style
+      include ../static/style.css
+  body
+<!--   Try to learn smart syntax of html using pug and get help from its documentation -->
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/logo.png")
+                | ADA
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Contact Us]
+
+    section#introSection 
+        div Welcome to Adnan's Dance Academy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Mission
+        div.box
+            div.card 
+                h3 Dance Perfection
+                div.cardbox 
+                    div.card-img 
+                        img(src='/static/img1.png')
+                    
+                    div.card-content 
+                        p This is the best dance academy in the universe
+            div.card 
+                h3 Dance the way you like
+                div.cardbox 
+                    div.card-img 
+                        img(src='/static/logo.png')
+                    
+                    div.card-content 
+                        p This is the best dance academy in the universe
+            div.card 
+                h3 Expert teaching
+                div.cardbox 
+                    div.card-img 
+                        img(src='/static/img2.png')
+                    
+                    div.card-content 
+                        p This is the best dance academy in the universe
+            div.card 
+                h3 Flexible timing
+                div.cardbox 
+                    div.card-img 
+                        img(src='/static/img3.png')
+                    
+                    div.card-content 
+                        p This is the best dance academy in the universe
+
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src='/static/logo1.png',alt='Sponsor Imaage' , Class="spImage")
+            img(src='/static/logo2.png',alt='Sponsor Imaage' , Class="spImage")
+            img(src='/static/logo3.png',alt='Sponsor Imaage' , Class="spImage")
+
+    footer#footer 
+        | Copyright ©  2023 AdnanDanceAcademy.com | All rights reserved
+
+    script
+      include ../static/index.js
